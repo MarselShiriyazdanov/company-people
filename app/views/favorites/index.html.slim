@@ -1,19 +1,9 @@
 h1 Listing favorites
 
-table
-  thead
-    tr
-      th
-      th
-      th
-
-  tbody
-    - @favorites.each do |favorite|
-      tr
-        td = link_to 'Show', favorite
-        td = link_to 'Edit', edit_favorite_path(favorite)
-        td = link_to 'Destroy', favorite, data: {:confirm => 'Are you sure?'}, :method => :delete
-
-br
-
-= link_to 'New Favorite', new_favorite_path
+.row
+  .col-md-4
+    - @people.each do |person|
+      = person.first_name
+  .col-md-4
+    - @companies.each do |company|
+      = company.name

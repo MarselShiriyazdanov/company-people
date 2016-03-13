@@ -6,7 +6,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
-gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
 gem 'high_voltage'
@@ -18,7 +17,6 @@ gem 'thin'
 gem 'devise'
 gem 'countries'
 gem 'interactor', '~> 3.0'
-gem 'jquery-turbolinks'
 
 group :development do
   gem 'better_errors'
@@ -50,6 +48,7 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'capybara-webkit'
   gem 'database_cleaner'
   gem 'launchy'
   gem 'selenium-webdriver'

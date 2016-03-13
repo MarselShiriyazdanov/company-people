@@ -3,7 +3,8 @@ class FavoritesController < ApplicationController
   respond_to :json, only: :create
 
   def index
-    @favorites = Favorite.all
+    @companies = Favorite.companies.order('created_at DESC')
+    @people = Favorite.people.order('created_at DESC')
   end
 
   def show
