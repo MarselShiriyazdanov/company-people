@@ -1,0 +1,14 @@
+.panel.panel-default
+  .panel-heading = @company.name
+  table.table
+    thead
+      tr
+        th
+        th First Name
+        th Last Name
+        th
+
+    tbody
+      = render partial: 'people/person', collection: @people
+
+= link_to 'Back', companies_path

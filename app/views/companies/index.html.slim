@@ -1,0 +1,17 @@
+.panel.panel-default
+  .panel-heading Listing companies
+  table.table
+    thead
+      tr
+        th
+        th Name
+        th Country code
+        th
+
+    tbody
+      - @companies.each do |company|
+        tr
+          td class=company.favorite_icon_class data-object="Comapany" data-id=company.id
+          td = company.name
+          td = company.country
+          td = link_to 'Show', company.object
