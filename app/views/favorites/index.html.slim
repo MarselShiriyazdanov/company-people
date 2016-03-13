@@ -1,9 +1,19 @@
 h1 Listing favorites
 
 .row
-  .col-md-4
+  .col-xs-4.col-sm-4.col-md-4.col-lg-4
+    h3
+      | Companies:
+      = @companies.length
+  .col-xs-4.col-sm-4.col-md-4.col-lg-4
+    h3
+      | Persons:
+      = @people.length
+
+.row
+  .col-md-4.col-sm-4.col-md-4.col-lg-4
     - @people.each do |person|
       = person.first_name
-  .col-md-4
+  .col-md-4.col-sm-4.col-md-4.col-lg-4
     - @companies.each do |company|
       = company.name
