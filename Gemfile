@@ -17,6 +17,8 @@ gem 'therubyracer', :platform => :ruby
 gem 'thin'
 gem 'devise'
 gem 'countries'
+gem 'interactor', '~> 3.0'
+gem 'jquery-turbolinks'
 
 group :development do
   gem 'better_errors'
